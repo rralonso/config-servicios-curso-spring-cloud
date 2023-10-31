@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/academia?serverTimezone=UTC
+    username: root
+    password:
+  #propiedades para que hibernate cree adecuadamente las instrucciones SQL
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  
+# Configuracion para registrarse en eureka.
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    instance-id: servicio-cursos-instancia-3
+
+# Puerto para la instancia 3.
+server:
+  port: 8083
