@@ -2,9 +2,10 @@
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka
+      defaultZone: http://192.168.1.143:8761/eureka
   instance:
     instance-id: servicio-formaciones-instancia
+    hostname: 192.168.1.143
 
 server:
   port: 9000
