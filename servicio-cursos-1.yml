@@ -18,6 +18,7 @@ eureka:
       default-zone: http://192.168.1.143:8761/eureka
   instance:
     instance-id: servicio-cursos-instancia-1
+    hostname: 192.168.1.143
 
 # Puerto para la instancia 1.
 server:
